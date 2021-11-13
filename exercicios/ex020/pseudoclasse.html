@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        div{
+            display: inline-block; /* para ficar tudo na mesma linha,se nao fica um em cima do outro*/
+            background-color: lightgrey;
+            border: 1px solid black; /* short hand */
+            text-align: center;
+            height:200px;
+            width:200px;
+        }
+        
+        div:hover > p{
+            background-color: darkslateblue;
+            display: block;
+            color: floralwhite;
+        }
+
+        div > p {
+           display: none;
+        }
+    </style>
+</head>
+<body>
+    
+   <p>Do you want to know a secret?</p>
+   <p>Pass the mouse on top of the square.</p>
+    <div>
+    <p>Surpriseee!!!!</p>
+    </div>
+</body>
+</html>
